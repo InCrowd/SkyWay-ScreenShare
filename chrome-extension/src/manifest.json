@@ -1,9 +1,9 @@
 {
-  "name": "Your extension name here",
-  "short_name": "Your extension short_name here",
-  "version": "Your extension version number here",
+  "name": "InCrowd Screen Sharing",
+  "short_name": "IC-ScreenShare",
+  "version": "1.0",
   "manifest_version": 2,
-  "description": "Your extension description here",
+  "description": "Enables screen sharing in InCrowd Answers",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
@@ -18,7 +18,7 @@
     "persistent": false
   },
   "content_scripts": [{
-    "matches": [""],
+    "matches": ["http://localhost:3001/*","http://www.incrowdanswers.com/*"],
     "js": ["content.js"],
     "all_frames": true,
     "run_at": "document_end"
